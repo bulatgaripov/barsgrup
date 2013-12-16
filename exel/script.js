@@ -1,3 +1,5 @@
+//Exel
+
 function createTable() {
 	var body = document.body;
 	
