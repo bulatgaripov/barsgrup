@@ -26,12 +26,13 @@ function addRow() {
 			var input = document.createElement("INPUT");
 			input.type = "text";
 			input.autofocus = "autofocus";
+			var t = this;
 			
 			input.onblur = function() {
-				newCell.innerHTML = input.value;
+				t.innerHTML = input.value;
 			}
 			
-			newCell.appendChild(input);
+			this.appendChild(input);
 		}
 		
 		if(table.rows.length > 1) {
